@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{hyperref}
+\usepackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+
+%configurando identação e separação de parágrafos
+\parindent 1.27cm
+\parskip   6pt
+
+%configurando os hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=green,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+%títulos,autor e data
+\title{\textbf{Um pouco sobre Ransomwares}}
+\author{Gustavo Lopes Rodrigues}
+\date{Novembro de 2020}
+
+\begin{document}
+    
+    \maketitle
+
+    \textbf{\emph{Ransomware}} é um tipo de ataque criptográfico
+    que: ao ganhar acesso do computador da vítima, o software 
+    criptografa os dados da máquina. Para restaurar os dados comprometidos,
+    a usuário receberá instruções em como pagar um valor X
+    (geralmente em \textbf{criptomoedas}, pois elas deixam menos 
+    vestígios, logo, são mais difíceis de serem re-encontradas) 
+    para receber a chave de decriptografia e ganhar acesso novamente. 
+    Infelizmente, existe casos onde os sofredores não recebem seus dados, 
+    ou pior ainda, aqueles que fizeram o pagamento tem chance de
+    serem alvos novamente de futuros ataques.
+
+    Existe diferentes formas na qual um Ransomware pode ganhar 
+    acesso a um computador:
+
+    \begin{itemize}
+        \item \textbf{\emph{Pishing}} - Ciberataques que envolve
+        o uso de e-mails, mensagem de celulares(SMS), onde o recipiente
+        é enganado a baixar um arquivo ou acessar um link. O nome "Pishing" é 
+        derivado da palavra "Fishing" que é a palavra em inglês para "pescar".
+        Ao ser "pescado", o hacker acaba de ganhar um ponto de acesso ao seu 
+        computador, assim instalado o Ransomware.
+    
+        \item \textbf{\emph{Exploit Kit}} - ao contrário do Pishing, em vez
+        de "pescar" a vítima, o Exploit Kit aproveita-se de falhas de programas
+        ou até de sistemas, para acessar os computadores de pessoas distraídas.
+        Um exemplo disso está no famoso ataque \href{https://olhardigital.com.br/especial/wannacry/}{\textbf{\emph{WannaCry}}} 
+        que infectou computadores ao redor do mundo, por causa de uma falha nos 
+        sistemas operacionais Windows.
+    \end{itemize}
+
+    %Iniciando referências
+    \begin{thebibliography}{3}
+        
+        \bibitem{Ransomware} 
+        \url{https://www.csoonline.com/article/3236183/what-is-ransomware-how-it-works-and-how-to-remove-it.html}
+        
+        \bibitem{pishing} 
+        \url{https://br.malwarebytes.com/phishing/}
+
+        \bibitem{Ransomware2} 
+        \url{https://www.trendmicro.com/vinfo/us/security/definition/ransomware}
+        
+    \end{thebibliography}
+
+\end{document}
